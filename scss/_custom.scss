@@ -17,7 +17,8 @@
 // $tiana-primary: #5FC5BF;
 // $tiana-gray: #242424;
 
-$tiana-primary: #bfa26a;
+$tiana-primary: lighten( black, 50% );
+// $tiana-primary: #bfa26a;
 
 $tiana-golden: #bfa26a;
 
@@ -146,7 +147,7 @@ body {
 					color: darken( $gray-lighter, 20% );
 
 					&:hover {
-						background-color: lighten( $tiana-light-blue, 10% );
+						background-color: lighten( $tiana-primary, 10% );
 							
 					}
 				}
@@ -199,7 +200,7 @@ body {
 			a {
 				// background-color: lighten( $gray, 40% );
 				color: darken( $tiana-primary, 0% );
-				border-bottom: 4px solid $tiana-light-blue;
+				border-bottom: 4px solid $tiana-primary;
 
 
 				&:hover {
@@ -312,56 +313,72 @@ img {
 
 .block-1 {
 
+	// border: 1rem solid red;
+
+	padding-bottom: 5rem;
 	border-top: 2rem solid black;
+	background: url("/wp-content/uploads/2016/06/block-1-bg.jpg") no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+
 		// @include linear-gradient( to top, rgba( white, .8 ), rgba( $tiana-primary, .5 )  ) ;
 
 	.content-wrapper {
-		background: url("/wp-content/uploads/2016/05/block-1-bg.jpg");
-		// border: 1rem solid red;
-		padding-bottom: 5rem;
+		// background: url("/wp-content/uploads/2016/06/block-1-bg.jpg");
+
+	  	.block-1-content {
+
+	  		background-color: white;
+	  		border: 1rem solid white;
+
+	  		margin-top: 15rem;
+	  		margin-bottom: 15rem;
+	  	}
+
 
 		.block-1-header {
 			font-family: 'Homemade Apple', cursive;
-			font-size: 6rem;
+			font-size: 5rem;
 			text-align: center;
 			padding-top: 10rem;
-			padding-bottom: 5rem;
-			color: lighten( black, 40% );
+			padding-bottom: 2rem;
+			color: black;
+			// color: lighten( black, 70% );
 		}
 
-		.left-text {
-
-			h2 {
-				font-size: 7rem;
-				font-weight: 900;
-				color: $tiana-primary;
-				float: right;
-				border-right: 1rem solid $tiana-primary;
-				padding-bottom: 10rem;
-				padding-top: 10rem;
-				padding-right: 5rem;
-			}
-
-		}
-
+	
 		.right-text {
-				padding-top: 2rem;
+			
+			padding: 5rem;
+			padding-top: 0;
 
 			h3 {
 				font-weight: 300;
 				font-size: 3rem;
 				color: gray;
 			}
+				// border: 1px solid red;
 
-			ul {
-				padding-top: 5rem;
+			.btn {
+				// width: 350px;
+				margin-top: 5rem;
+				padding-top: 2rem;
+				padding-bottom: 2rem;
+				padding-left: 5rem;
+				padding-right: 5rem;
+				color: $tiana-primary;
 
-				li {
-					font-size: 2rem;
-					color: lighten( gray, 15% );
-					font-weight: 500;
+
+				background-color: transparent;
+				border: 2px solid darken( $tiana-primary, 10% );
+
+				&:hover {
+					background-color: darken( $tiana-primary, 10% );
+					color: white;
 				}
-			}			
+			}
 		}
 
 
@@ -370,19 +387,36 @@ img {
 
 .block-2 {
 
-	background: url("/wp-content/uploads/2016/06/block-2-bg.jpg") no-repeat center center fixed;
+	// border: 1rem solid blue;
+
+
+	background-color: black;
+	// background: url("/wp-content/uploads/2016/06/block-2-bg.jpg") no-repeat center center fixed;
 	// background: url("/wp-content/uploads/2016/06/workwithme-personal-coach-bg.jpg") no-repeat center center fixed;
 
-	  -webkit-background-size: cover;
+	  // -webkit-background-size: cover;
 
-	  -moz-background-size: cover;
+	  // -moz-background-size: cover;
 
-	  -o-background-size: cover;
+	  // -o-background-size: cover;
 
-	  background-size: cover;
+	  // background-size: cover;
 
 	// padding-top: 10rem;
 	// padding-bottom: 10rem;  
+
+	.bracket-left {
+		border-left: 1rem solid white;
+		border-top: 1rem solid white;
+		border-bottom: 1rem solid white;
+		height: 700px;
+	}
+	.bracket-left {
+		border-right: 1rem solid black;
+		border-top: 1rem solid black;
+		border-bottom: 1rem solid black;
+		height: 700px;
+	}
 
 	.content-wrapper {
 		@include linear-gradient( to right, rgba( white, .4 ), rgba( black, .7 )  ) ;
@@ -395,6 +429,8 @@ img {
 
 	.right-text {
 
+		text-align: center;
+
 		.lovely {
 			font-family: 'Homemade Apple', cursive;
 			font-size: 3rem;		
@@ -406,6 +442,8 @@ img {
 		}
 
 		h2 {
+			// font-family: 'Homemade Apple', cursive;
+
 			font-weight: 300;
 			font-size: 3rem;
 			line-height: 1.5;
@@ -471,7 +509,7 @@ img {
 			h3 {
 				font-weight: 300;
 				font-size: 3rem;
-				color: lighten( $tiana-pink, 30% );
+				color: lighten( $tiana-primary, 10% );
 			}
 
 			ul {
@@ -490,7 +528,8 @@ img {
 }
 
 .block-4 {
-	
+
+
 	background: url("/wp-content/uploads/2016/06/block-4-bg.jpg") no-repeat center center fixed;
 
 	  -webkit-background-size: cover;
@@ -501,7 +540,12 @@ img {
 
 	  background-size: cover;
 
+	  color: white;
+
 	  .content-wrapper {
+		
+		min-height: 600px;
+
 	  	@include background-image(linear-gradient(white 0, rgba( $tiana-primary, .7 ) 50%, rgba( darken( $tiana-primary, 10% ), .7 ) 50%));
 
 		  .text-content {
@@ -514,15 +558,39 @@ img {
 				text-align: center;
 				padding-top: 3rem;
 				padding-bottom: 5rem;
-				color: lighten( black, 40% );
+				color: white;
 			}
 			h2 {
 				font-variant: small-caps;
 				padding-top: 9rem;
 				font-size: 4rem;
-				color: gray;
+				color: white;
 				// border: 1px solid red;
-			}	  	
+			}
+
+			.para-block {
+				margin-top: 5rem;
+			}
+
+			.btn {
+				// width: 350px;
+				margin-top: 5rem;
+				padding-top: 2rem;
+				padding-bottom: 2rem;
+				padding-left: 5rem;
+				padding-right: 5rem;
+				color: white;
+
+
+				background-color: transparent;
+				border: 2px solid darken( white, 10% );
+
+				&:hover {
+					background-color: darken( white, 10% );
+					color: $tiana-primary;
+				}
+			}			
+
 
 		  }
 
@@ -682,7 +750,7 @@ img {
 		h1, h2 {
 			// font-family: 'Lora', serif;
 			// font-family: 'Cabin', sans-serif;
-			font-family: 'Muli', sans-serif;
+			font-family: 'Railway', sans-serif;
 			// font-family: 'NEOTERIC', sans-serif;
 
 
@@ -698,7 +766,7 @@ img {
 				color: darken( $tiana-primary, 10% );
 				text-decoration: none;
 				&:hover {
-					color: lighten( black, 20% );
+					color: lighten( gray, 0% );
 				}
 			}
 
@@ -1106,7 +1174,8 @@ img {
 		margin-top: 5rem;
 
 		p {
-			color: black;
+			font-family: Railway, sans-serif;
+			color: white;
 
 		}
 
@@ -1443,14 +1512,14 @@ img {
 		}
 
 		li {
-			background-color: rgba( darken( $oil, 10% ), .5);
+			background-color: rgba( darken( $steel, 0% ), 1);
 			margin-bottom: .2rem;
 			padding: 1rem;
 			list-style: none;
 			@include transition(all 0.5s ease-in-out);
 
 			&:hover {
-				background-color: $steel;
+				background-color: red;
 
 			}
 		}
@@ -1462,7 +1531,7 @@ img {
 
 			
 			&:hover {
-				color: white;
+				color: black;
 			}
 		}
 	}

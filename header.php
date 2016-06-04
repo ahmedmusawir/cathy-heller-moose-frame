@@ -110,11 +110,11 @@
 	<header id="front-pg-header">
 
 		<?php // if ( is_front_page() || is_home() || is_single() || is_archive() || is_search() ) : ?>
-		<?php if ( is_front_page() || is_single() || is_archive() || is_search() ) : ?>
+		<?php if ( is_front_page() ) : ?>
 
 			<img class="img-responsive" src="<?php echo $front_header_image; ?>" alt="tiana img">
 
-		<?php elseif ( is_home() ) : ?>	
+		<?php elseif ( is_home() || is_single() || is_archive() || is_search() ) : ?>	
 			
 			<img class="img-responsive" src="<?php echo $blog_header_image; ?>" alt="tiana img">
 			
