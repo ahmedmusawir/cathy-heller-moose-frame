@@ -20,9 +20,7 @@ If you want to add your own css code, please do it in /css/custom.css
 -------------------------------------------------------------- */
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
-@import url(https://fonts.googleapis.com/css?family=Poiret+One);
-@import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Homemade+Apple);
 .alignnone {
   margin: 5px 20px 20px 0; }
@@ -5930,6 +5928,9 @@ button.close {
   src: url("/wp-content/themes/cat-gardner-moose-frame/_fonts/NEOTERIC.ttf.woff") format("woff"), url("/wp-content/themes/cat-gardner-moose-frame/_fonts/NEOTERIC.ttf.svg#NEOTERIC") format("svg"), url("/wp-content/themes/cat-gardner-moose-frame/_fonts/NEOTERIC.ttf.eot"), url("/wp-content/themes/cat-gardner-moose-frame/_fonts/NEOTERIC.ttf.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal; }
+body {
+  font-family: 'Raleway', sans-serif; }
+
 /**
  *
  * This code helps with the in-between 991 and 768px
@@ -5974,19 +5975,20 @@ button.close {
   .navbar .nav li a {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.3s ease-in-out;
+    color: black; }
     .navbar .nav li a:hover {
-      border-bottom: 4px solid gray; }
+      color: #b39700; }
   .navbar .dropdown-menu {
     background-color: #101010; }
     .navbar .dropdown-menu .current-menu-item a {
       color: white; }
     .navbar .dropdown-menu li a {
-      color: #bbbbbb; }
+      color: black; }
       .navbar .dropdown-menu li a:hover {
         background-color: #999999; }
   .navbar #menu-menu-1 li a {
-    color: #7c7c7c;
+    color: black;
     font-size: 2.5rem;
     font-weight: 300; }
     @media (max-width: 1315px) {
@@ -6004,8 +6006,7 @@ button.close {
     .navbar #menu-menu-1 li a:hover {
       color: gray; }
   .navbar #menu-menu-1 .current-menu-item a {
-    color: gray;
-    border-bottom: 4px solid gray; }
+    color: #b39700; }
 
 img {
   max-width: 100%;
@@ -6093,72 +6094,74 @@ img {
     padding-top: 10rem;
     padding-bottom: 2rem;
     color: black; }
+    @media (max-width: 400px) {
+      .block-1 .content-wrapper .block-1-header {
+        font-size: 4rem; } }
   .block-1 .content-wrapper .right-text {
     padding: 5rem;
     padding-top: 0; }
+    @media (max-width: 400px) {
+      .block-1 .content-wrapper .right-text {
+        padding-left: 1rem;
+        padding-right: 1rem; }
+        .block-1 .content-wrapper .right-text h3 {
+          font-size: 2.5rem; } }
     .block-1 .content-wrapper .right-text h3 {
       font-weight: 300;
       font-size: 3rem;
-      color: gray; }
+      color: black; }
     .block-1 .content-wrapper .right-text .btn {
       margin-top: 5rem;
       padding-top: 2rem;
       padding-bottom: 2rem;
       padding-left: 5rem;
       padding-right: 5rem;
-      color: gray;
+      color: #1a1a1a;
       background-color: transparent;
       border: 2px solid #666666; }
       .block-1 .content-wrapper .right-text .btn:hover {
-        background-color: #666666;
+        background-color: #333333;
         color: white; }
+      @media (max-width: 400px) {
+        .block-1 .content-wrapper .right-text .btn {
+          font-size: 1.5rem;
+          padding-left: 1rem;
+          padding-right: 1rem; } }
 
 .block-2 {
   background-color: black; }
-  .block-2 .bracket-left {
-    border-left: 1rem solid white;
-    border-top: 1rem solid white;
-    border-bottom: 1rem solid white;
-    height: 700px; }
-  .block-2 .bracket-left {
-    border-right: 1rem solid black;
-    border-top: 1rem solid black;
-    border-bottom: 1rem solid black;
-    height: 700px; }
   .block-2 .content-wrapper {
-    background-color: rgba(255, 255, 255, 0.4);
-    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7));
-    background-image: linear-gradient(to right,rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7));
     color: white;
     padding-top: 10rem;
     padding-bottom: 10rem; }
-  .block-2 .right-text {
+    @media (max-width: 900px) {
+      .block-2 .content-wrapper {
+        padding-top: 5rem; } }
+  .block-2 .text-content {
+    padding-top: 7rem;
     text-align: center; }
-    .block-2 .right-text .lovely {
-      font-family: 'Homemade Apple', cursive;
-      font-size: 3rem; }
-    .block-2 .right-text .special {
-      font-size: 3rem;
-      font-weight: 700; }
-    .block-2 .right-text h2 {
-      font-weight: 300;
-      font-size: 3rem;
-      line-height: 1.5;
-      color: #f8cbe6; }
-    .block-2 .right-text h3 {
-      font-weight: 300;
-      font-size: 2.8rem;
-      line-height: 1.5; }
-    .block-2 .right-text .btn {
-      margin-top: 5rem;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-      padding-left: 5rem;
-      padding-right: 5rem;
-      background-color: transparent;
-      border: 1rem solid #981362; }
-      .block-2 .right-text .btn:hover {
-        background-color: #981362; }
+    @media (max-width: 900px) {
+      .block-2 .text-content {
+        padding-top: 0rem; } }
+    .block-2 .text-content h2 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 200;
+      line-height: 4.5rem;
+      padding-bottom: 3rem;
+      padding-left: 3rem;
+      padding-right: 3rem; }
+      @media (max-width: 1200px) {
+        .block-2 .text-content h2 {
+          font-size: 3rem; } }
+      @media (max-width: 1000px) {
+        .block-2 .text-content h2 {
+          font-size: 2.5rem;
+          padding-bottom: 3rem; } }
+      @media (max-width: 900px) {
+        .block-2 .text-content h2 {
+          font-size: 2rem;
+          padding-bottom: 3rem; } }
 
 .block-3 .content-wrapper {
   background: url("/wp-content/uploads/2016/05/block-1-bg.jpg");
@@ -6169,7 +6172,10 @@ img {
     text-align: center;
     padding-top: 10rem;
     padding-bottom: 5rem;
-    color: #666666; }
+    color: black; }
+    @media (max-width: 400px) {
+      .block-3 .content-wrapper .block-3-header {
+        font-size: 3.5rem; } }
   .block-3 .content-wrapper .left-image {
     padding-right: 3rem;
     padding-top: 5rem; }
@@ -6180,16 +6186,16 @@ img {
     .block-3 .content-wrapper .right-text h3 {
       font-weight: 300;
       font-size: 3rem;
-      color: #999999; }
+      color: black; }
     .block-3 .content-wrapper .right-text ul {
       padding-top: 5rem; }
       .block-3 .content-wrapper .right-text ul li {
         font-size: 2rem;
-        color: #a6a6a6;
+        color: black;
         font-weight: 500; }
 
 .block-4 {
-  background: url("/wp-content/uploads/2016/06/block-4-bg.jpg") no-repeat center center fixed;
+  background: url("/wp-content/uploads/2016/06/block-3-bg-e1465110367145.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -6197,13 +6203,13 @@ img {
   color: white; }
   .block-4 .content-wrapper {
     min-height: 600px;
-    background-image: -webkit-linear-gradient(white 0, rgba(128, 128, 128, 0.7) 50%, rgba(102, 102, 102, 0.7) 50%);
-    background-image: linear-gradient(to   , rgba(128, 128, 128, 0.7) 50%, rgba(102, 102, 102, 0.7) 50%); }
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.6)) left repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.6)) left repeat; }
     .block-4 .content-wrapper .text-content {
       text-align: center; }
       .block-4 .content-wrapper .text-content h1 {
         font-family: 'Homemade Apple', cursive;
-        font-size: 4rem;
+        font-size: 5rem;
         text-align: center;
         padding-top: 3rem;
         padding-bottom: 5rem;
@@ -6211,10 +6217,12 @@ img {
       .block-4 .content-wrapper .text-content h2 {
         font-variant: small-caps;
         padding-top: 9rem;
+        font-family: 'Raleway', sans-serif;
         font-size: 4rem;
+        font-weight: 700;
         color: white; }
       .block-4 .content-wrapper .text-content .para-block {
-        margin-top: 5rem; }
+        margin-top: 3rem; }
       .block-4 .content-wrapper .text-content .btn {
         margin-top: 5rem;
         padding-top: 2rem;
@@ -6307,6 +6315,7 @@ img {
   /* Instead use this non-standard one: */
   /* Adds a hyphen where the word breaks, if supported (No Blink) */ }
   .page-header h1 {
+    font-family: 'Raleway', sans-serif;
     padding-left: 1.8rem;
     font-size: 3rem;
     color: gray; }
@@ -6337,7 +6346,7 @@ img {
     border-bottom: 1px solid gray;
     padding-bottom: 2rem; }
     .blog-post .entry-header h1, .blog-post .entry-header h2 {
-      font-family: 'Railway', sans-serif;
+      font-family: 'Raleway', sans-serif;
       font-size: 3.2rem;
       font-weight: 200;
       padding-top: 0rem;
@@ -6389,7 +6398,7 @@ img {
     padding-right: 1.5rem;
     padding-top: 2rem; }
     .blog-post .only-text p {
-      font-family: 'Poiret One', cursive;
+      font-family: 'Raleway', sans-serif;
       padding-top: 3rem;
       font-size: 2rem;
       font-variant: 300;
@@ -6444,6 +6453,7 @@ img {
  *
  */
 .single-page h1, .single-page h2, .single-page h3, .single-page h4, .single-page h5 {
+  font-family: 'Raleway', sans-serif;
   color: #8c8c8c;
   font-size: 3.5rem;
   padding-left: 2.7rem;
@@ -6452,7 +6462,7 @@ img {
 .single-page .entry-meta {
   display: none; }
 .single-page .entry-header h2 {
-  font-family: 'Bevan', cursive;
+  font-family: 'Raleway', sans-serif;
   font-variant: small-caps;
   font-size: 4rem;
   color: #286090;
@@ -6472,7 +6482,7 @@ img {
 .single-page .only-text {
   padding-top: 2rem; }
   .single-page .only-text p {
-    font-family: 'Poiret One', cursive;
+    font-family: 'Raleway', sans-serif;
     font-size: 2rem;
     font-variant: 300;
     color: #b0b0b0; }
@@ -6495,6 +6505,7 @@ img {
 .praise-block {
   margin-top: 4rem;
   margin-bottom: 4rem;
+  font-family: 'Raleway', sans-serif;
   background: -webkit-linear-gradient(rgba(239, 239, 239, 0.8), rgba(128, 128, 128, 0.5)) left repeat;
   background: linear-gradient(rgba(239, 239, 239, 0.8), rgba(128, 128, 128, 0.5)) left repeat;
   -webkit-transition: all 1s ease-in-out;
@@ -6526,7 +6537,7 @@ img {
     padding: 2rem;
     padding-top: 5rem; }
   .praise-block .praise-text p {
-    font-family: 'Poiret One', cursive;
+    font-family: 'Raleway', sans-serif;
     font-size: 2rem;
     font-weight: 300;
     color: #7d7d7d;
@@ -6548,10 +6559,12 @@ img {
  *
  */
 .contact-header h1 {
+  font-family: 'Raleway', sans-serif;
   font-size: 5rem; }
 
 .entry-content .only-text {
-  padding-top: 0; }
+  padding-top: 0;
+  font-family: 'Raleway', sans-serif; }
 .entry-content .contact-top-row h3 {
   font-size: 4rem;
   font-weight: 300; }
@@ -6589,6 +6602,7 @@ img {
       font-size: 2rem;
       color: gray; }
   .entry-content .contact-top-row .contact-social p {
+    font-family: 'Raleway', sans-serif;
     font-size: 2.5rem;
     color: gray;
     padding-top: 2rem; }
@@ -6600,7 +6614,7 @@ img {
   margin-bottom: 10rem;
   margin-top: 5rem; }
   .entry-content .the-form p {
-    font-family: Railway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: white; }
   .entry-content .the-form .wpcf7-textarea {
     height: 16rem; }
@@ -6661,6 +6675,7 @@ img {
   padding-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  font-family: 'Raleway', sans-serif;
   background: -webkit-linear-gradient(rgba(239, 239, 239, 0.8), rgba(128, 128, 128, 0.5)) left repeat;
   background: linear-gradient(rgba(239, 239, 239, 0.8), rgba(128, 128, 128, 0.5)) left repeat; }
   .widget .widget-title {
@@ -6673,10 +6688,12 @@ img {
     color: #7d7d7d; }
   .widget .custom-widget h3 {
     color: #242424;
-    text-align: center; }
+    text-align: center;
+    font-family: 'Raleway', sans-serif; }
   .widget .custom-widget h4 {
     color: #575757;
-    text-align: center; }
+    text-align: center;
+    font-family: 'Raleway', sans-serif; }
   .widget .custom-widget img {
     padding-bottom: 2rem;
     padding-top: 2rem;
@@ -6709,7 +6726,8 @@ img {
     color: #cccccc;
     text-align: center;
     font-size: 1.6rem;
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    font-family: 'Raleway', sans-serif; }
   .widget ul {
     list-style: none;
     padding-left: 0; }
@@ -6727,7 +6745,7 @@ img {
         display: block;
         color: #0b0b0b;
         font-size: 2rem;
-        font-variant: small-caps; }
+        font-family: 'Raleway', sans-serif; }
         .widget ul li a:hover {
           text-decoration: none;
           color: #eeeeee; }
@@ -6744,7 +6762,8 @@ img {
  *
  */
 #footer-main {
-  background-color: #404040; }
+  background-color: #404040;
+  font-family: 'Raleway', sans-serif; }
   #footer-main .copyright {
     padding: 1rem;
     background-color: #4d4d4d; }
@@ -6757,27 +6776,35 @@ img {
         color: gray; }
   #footer-main .footer-body {
     padding-top: 3rem; }
-    #footer-main .footer-body #text-3 .footer-social {
-      text-align: center; }
-      #footer-main .footer-body #text-3 .footer-social li {
-        display: inline-block;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%; }
-    #footer-main .footer-body #text-3 h3 {
-      font-size: 4rem; }
-    #footer-main .footer-body #text-3 h4 {
-      font-size: 2.2rem;
-      font-weight: 300;
-      padding-bottom: 3rem; }
-    #footer-main .footer-body #text-3 p {
-      padding-top: 2rem; }
+    #footer-main .footer-body #text-3 {
+      padding-top: 5rem; }
+      #footer-main .footer-body #text-3 .footer-social {
+        font-family: 'Raleway', sans-serif;
+        text-align: center; }
+        #footer-main .footer-body #text-3 .footer-social li {
+          display: inline-block;
+          font-family: 'Raleway', sans-serif;
+          width: 65px;
+          height: 65px;
+          border-radius: 50%; }
+      #footer-main .footer-body #text-3 h3 {
+        font-size: 4rem;
+        font-family: 'Raleway', sans-serif; }
+      #footer-main .footer-body #text-3 h4 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.2rem;
+        font-weight: 300;
+        padding-bottom: 3rem; }
+      #footer-main .footer-body #text-3 p {
+        font-family: 'Raleway', sans-serif;
+        padding-top: 2rem; }
   #footer-main .widget-footer {
     padding-left: 0;
     color: #cdcdcd; }
     #footer-main .widget-footer .widget-title {
       color: #eeeeee;
       padding-bottom: 2rem;
+      font-family: 'Raleway', sans-serif;
       padding-top: 5rem; }
     #footer-main .widget-footer ul {
       padding-left: 0; }
@@ -6790,7 +6817,7 @@ img {
       -moz-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out; }
       #footer-main .widget-footer li:hover {
-        background-color: red; }
+        background-color: #998100; }
     #footer-main .widget-footer a {
       color: #cdcdcd;
       font-size: 2rem; }
@@ -6805,6 +6832,8 @@ img {
         font-family: 'Josefin Sans', sans-serif;
         font-size: 1.5rem;
         font-weight: 600; }
+        #footer-main #footer-menu li a:hover {
+          color: white; }
 
 .acf-map {
   width: 100%;

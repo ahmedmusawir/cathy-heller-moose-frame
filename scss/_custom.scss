@@ -36,10 +36,11 @@ $tiana-light-blue: #2787b1 ;
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css);
 // @import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700italic,400italic,700);
 // @import url(https://fonts.googleapis.com/css?family=Bevan);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
-@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+// @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+// @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 // @import url(https://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic);
-@import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
+// @import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
 @import url(https://fonts.googleapis.com/css?family=Homemade+Apple);
 
 html { 
@@ -49,6 +50,7 @@ html {
 body {
 	// font-family: 'NEOTERIC', sans-serif;
 	// display: none;
+	font-family: 'Raleway', sans-serif;
 }
 
 /**
@@ -121,9 +123,13 @@ body {
 
 			a {
 				@include transition(all .3s ease-in-out);
+
+				color: black;
+
 				&:hover {
 					// background-color: red;
-					border-bottom: 4px solid $tiana-primary;
+					// border-bottom: 4px solid $tiana-primary;
+					color: darken( gold, 15% );
 				}				
 			}
 
@@ -144,7 +150,7 @@ body {
 			li {
 
 				a {
-					color: darken( $gray-lighter, 20% );
+					color: darken( $tiana-primary, 70% );
 
 					&:hover {
 						background-color: lighten( $tiana-primary, 10% );
@@ -163,7 +169,7 @@ body {
 				// background-color: lighten( $tiana-light-blue, 10% );
 			}
 			a {
-				color: darken( $gray-lighter, 45% );
+				color: darken( $gray-lighter, 95% );
 				font-size: 2.5rem;
 				// font-size: 1.7rem;
 				font-weight: 300;
@@ -199,8 +205,8 @@ body {
 
 			a {
 				// background-color: lighten( $gray, 40% );
-				color: darken( $tiana-primary, 0% );
-				border-bottom: 4px solid $tiana-primary;
+				color: darken( gold, 15% );
+				// border-bottom: 4px solid $tiana-primary;
 
 
 				&:hover {
@@ -346,6 +352,9 @@ img {
 			padding-bottom: 2rem;
 			color: black;
 			// color: lighten( black, 70% );
+			@media ( max-width: 400px ) {
+				font-size: 4rem;
+			}
 		}
 
 	
@@ -353,11 +362,21 @@ img {
 			
 			padding: 5rem;
 			padding-top: 0;
+			@media ( max-width: 400px ) {
+					padding-left: 1rem;
+					padding-right: 1rem;
+					// border: 1px solid red;
+
+					h3 {
+						font-size: 2.5rem;
+
+					}
+			}			
 
 			h3 {
 				font-weight: 300;
 				font-size: 3rem;
-				color: gray;
+				color: black;
 			}
 				// border: 1px solid red;
 
@@ -368,15 +387,22 @@ img {
 				padding-bottom: 2rem;
 				padding-left: 5rem;
 				padding-right: 5rem;
-				color: $tiana-primary;
+				color: darken( $tiana-primary, 40% );
 
 
 				background-color: transparent;
 				border: 2px solid darken( $tiana-primary, 10% );
 
 				&:hover {
-					background-color: darken( $tiana-primary, 10% );
+					background-color: darken( $tiana-primary, 30% );
 					color: white;
+				}
+
+				@media ( max-width: 400px ) {
+					font-size: 1.5rem;
+					padding-left: 1rem;
+					padding-right: 1rem;
+					// border: 1px solid red;
 				}
 			}
 		}
@@ -405,72 +431,55 @@ img {
 	// padding-top: 10rem;
 	// padding-bottom: 10rem;  
 
-	.bracket-left {
-		border-left: 1rem solid white;
-		border-top: 1rem solid white;
-		border-bottom: 1rem solid white;
-		height: 700px;
-	}
-	.bracket-left {
-		border-right: 1rem solid black;
-		border-top: 1rem solid black;
-		border-bottom: 1rem solid black;
-		height: 700px;
-	}
-
+	
 	.content-wrapper {
-		@include linear-gradient( to right, rgba( white, .4 ), rgba( black, .7 )  ) ;
+		// @include linear-gradient( to right, rgba( white, .4 ), rgba( black, .7 )  ) ;
 		// border: 1px solid black;		
 		color: white;
 
 		padding-top: 10rem;
 		padding-bottom: 10rem;  
+		@media ( max-width: 900px ) {
+			padding-top: 5rem;
+		}				
 	}
 
-	.right-text {
-
+	.text-content {
+		
+		padding-top: 7rem;
 		text-align: center;
-
-		.lovely {
-			font-family: 'Homemade Apple', cursive;
-			font-size: 3rem;		
-		}
-
-		.special {
-			font-size: 3rem;
-			font-weight: 700;
-		}
+		@media ( max-width: 900px ) {
+			padding-top: 0rem;
+		}			
 
 		h2 {
-			// font-family: 'Homemade Apple', cursive;
+			font-family: 'Raleway', sans-serif;
+			font-size: 3.5rem;
+			font-weight: 200;
+			line-height: 4.5rem;
+			padding-bottom: 3rem;
+			padding-left: 3rem;
+			padding-right: 3rem;
 
-			font-weight: 300;
-			font-size: 3rem;
-			line-height: 1.5;
-			color: lighten( $tiana-pink, 45% );			
-		}
-		h3 {
-			font-weight: 300;
-			font-size: 2.8rem;
-			line-height: 1.5;
-		}
-
-		.btn {
-			// width: 350px;
-			margin-top: 5rem;
-			padding-top: 2rem;
-			padding-bottom: 2rem;
-			padding-left: 5rem;
-			padding-right: 5rem;
-
-			background-color: transparent;
-			border: 1rem solid darken( $tiana-pink, 10% );
-
-			&:hover {
-				background-color: darken( $tiana-pink, 10% );
+			@media ( max-width: 1200px ) {
+				font-size: 3rem;
 			}
+			@media ( max-width: 1000px ) {
+				font-size: 2.5rem;
+				padding-bottom: 3rem;
+			}	
+			@media ( max-width: 900px ) {
+				font-size: 2rem;
+				padding-bottom: 3rem;
+			}	
+			// @media ( max-width: 650px ) {
+			// 	font-size: 1.5rem;
+			// 	padding-bottom: 1.5rem;
+			// 	line-height: 2.5;
+			// }												
 		}
 	}
+
 }
 
 .block-3 {
@@ -489,7 +498,11 @@ img {
 			text-align: center;
 			padding-top: 10rem;
 			padding-bottom: 5rem;
-			color: lighten( black, 40% );
+			color: lighten( black, 0% );
+			@media ( max-width: 400px ) {
+				font-size: 3.5rem;
+			}
+
 		}
 
 		.left-image {
@@ -509,7 +522,7 @@ img {
 			h3 {
 				font-weight: 300;
 				font-size: 3rem;
-				color: lighten( $tiana-primary, 10% );
+				color: darken( $tiana-primary, 50% );
 			}
 
 			ul {
@@ -517,7 +530,7 @@ img {
 
 				li {
 					font-size: 2rem;
-					color: lighten( gray, 15% );
+					color: black;
 					font-weight: 500;
 				}
 			}			
@@ -530,7 +543,8 @@ img {
 .block-4 {
 
 
-	background: url("/wp-content/uploads/2016/06/block-4-bg.jpg") no-repeat center center fixed;
+	background: url("/wp-content/uploads/2016/06/block-3-bg-e1465110367145.jpg") no-repeat center center fixed;
+	// background: url("/wp-content/uploads/2016/06/block-4-bg.jpg") no-repeat center center fixed;
 
 	  -webkit-background-size: cover;
 
@@ -546,7 +560,9 @@ img {
 		
 		min-height: 600px;
 
-	  	@include background-image(linear-gradient(white 0, rgba( $tiana-primary, .7 ) 50%, rgba( darken( $tiana-primary, 10% ), .7 ) 50%));
+	  	// @include background-image(linear-gradient(white 0, rgba( $tiana-primary, .7 ) 50%, rgba( darken( $tiana-primary, 10% ), .7 ) 50%));
+	  	@include background(linear-gradient( rgba(white, .8), rgba( black, .6 )) left repeat);
+
 
 		  .text-content {
 
@@ -554,7 +570,7 @@ img {
 
 			h1 {
 				font-family: 'Homemade Apple', cursive;
-				font-size: 4rem;
+				font-size: 5rem;
 				text-align: center;
 				padding-top: 3rem;
 				padding-bottom: 5rem;
@@ -563,13 +579,15 @@ img {
 			h2 {
 				font-variant: small-caps;
 				padding-top: 9rem;
+				font-family: 'Raleway', sans-serif;
 				font-size: 4rem;
+				font-weight: 700;
 				color: white;
 				// border: 1px solid red;
 			}
 
 			.para-block {
-				margin-top: 5rem;
+				margin-top: 3rem;
 			}
 
 			.btn {
@@ -691,6 +709,7 @@ img {
 		h1 {
 			// font-family: 'Bevan', cursive;
 			// font-variant: small-caps;
+			font-family: 'Raleway', sans-serif;
 			padding-left: 1.8rem;
 			font-size: 3rem;
 			color: darken( $tiana-primary, 0% );
@@ -750,7 +769,8 @@ img {
 		h1, h2 {
 			// font-family: 'Lora', serif;
 			// font-family: 'Cabin', sans-serif;
-			font-family: 'Railway', sans-serif;
+			font-family: 'Raleway', sans-serif;
+
 			// font-family: 'NEOTERIC', sans-serif;
 
 
@@ -818,7 +838,9 @@ img {
 		padding-right: 1.5rem;
 		padding-top: 2rem;
 		p {
-			font-family: 'Poiret One', cursive;
+			// font-family: 'Poiret One', cursive;
+			font-family: 'Raleway', sans-serif;
+
 			padding-top: 3rem;
 			// font-family: 'NEOTERIC', sans-serif;
 
@@ -924,6 +946,8 @@ img {
 	// background-color: rgba( lighten( $gray-light, 45% ), .8);
 
 	h1, h2, h3, h4, h5 {
+		
+		font-family: 'Raleway', sans-serif;
 		color: lighten( $tiana-primary, 5% );
 		font-size: 3.5rem;
 		padding-left: 2.7rem;
@@ -939,7 +963,9 @@ img {
 
 	.entry-header {
 		h2 {
-			font-family: 'Bevan', cursive;
+			// font-family: 'Bevan', cursive;
+			font-family: 'Raleway', sans-serif;
+
 			font-variant: small-caps;
 			font-size: 4rem;
 			color: darken( $brand-primary, 10% );
@@ -972,7 +998,8 @@ img {
 		// padding-right: 1.5rem;
 		padding-top: 2rem;
 		p {
-			font-family: 'Poiret One', cursive;
+			font-family: 'Raleway', sans-serif;
+			// font-family: 'Poiret One', cursive;
 			font-size: 2rem;
 			font-variant: 300;
 			color: lighten( $tiana-gray, 55% );
@@ -1009,6 +1036,7 @@ img {
 	// border: 1px solid red;
 	margin-top: 4rem;
 	margin-bottom: 4rem;
+	font-family: 'Raleway', sans-serif;
 
 	@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
 	@include transition(all 1.0s ease-in-out);
@@ -1068,7 +1096,8 @@ img {
 		// border: 1px solid blue;
 		// padding-left: 4rem;
 		p {
-			font-family: 'Poiret One', cursive;
+			font-family: 'Raleway', sans-serif;
+			// font-family: 'Poiret One', cursive;
 			font-size: 2rem;
 			font-weight: 300;
 			color: lighten( $tiana-gray, 35% );
@@ -1098,6 +1127,7 @@ img {
 
 .contact-header {
 	h1 {
+		font-family: 'Raleway', sans-serif;
 		font-size: 5rem;
 	}
 } 
@@ -1106,6 +1136,8 @@ img {
 	// border: 1px solid green;
 	.only-text {
 		padding-top: 0;
+		font-family: 'Raleway', sans-serif;
+
 	}
 	
 	.contact-top-row {
@@ -1157,6 +1189,7 @@ img {
 				
 			}
 			p {
+				font-family: 'Raleway', sans-serif;
 				font-size: 2.5rem;
 				color: $tiana-primary;
 				padding-top: 2rem;
@@ -1174,7 +1207,8 @@ img {
 		margin-top: 5rem;
 
 		p {
-			font-family: Railway, sans-serif;
+			font-family: 'Raleway', sans-serif;
+
 			color: white;
 
 		}
@@ -1285,6 +1319,7 @@ img {
 	padding-left: 2rem;
 	padding-right: 2rem;
 
+	font-family: 'Raleway', sans-serif;
 	// background-color: rgba( lighten( $gray-light, 15% ), .7);
 	@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
 
@@ -1306,12 +1341,14 @@ img {
 	.custom-widget {
 		// border: 1px solid red;
 		h3 {
-		color: lighten( $tiana-gray, 0% );
-		text-align: center;
+			color: lighten( $tiana-gray, 0% );
+			text-align: center;
+			font-family: 'Raleway', sans-serif;
 		}
 		h4 {
 			color: lighten( $tiana-gray, 20% );
 			text-align: center;
+			font-family: 'Raleway', sans-serif;
 		}
 		img {
 			padding-bottom: 2rem;
@@ -1333,6 +1370,7 @@ img {
 			font-size: 1.6rem;
 			padding-bottom: 2rem;
 
+			font-family: 'Raleway', sans-serif;
 		}
 	}
 
@@ -1356,7 +1394,8 @@ img {
 				// border: 1px solid red;
 				color: darken( $tiana-gray , 10%);
 				font-size: 2rem;
-				font-variant: small-caps;
+				font-family: 'Raleway', sans-serif;
+				// font-variant: small-caps;
 				&:hover {
 					text-decoration: none;
 					color: $gray-lighter;
@@ -1434,6 +1473,7 @@ img {
 	background-color: darken( $tiana-primary, 25% );
 	// @include background(linear-gradient( lighten( $tiana-primary, 0% ), $tiana-primary ) left repeat);
 
+	font-family: 'Raleway', sans-serif;
 	// margin-top: 4rem;
 	// border: 3px solid red;
 	
@@ -1461,31 +1501,38 @@ img {
 	
 		#text-3 {
 
+		padding-top: 5rem;
 
 			.footer-social {
 				
+				font-family: 'Raleway', sans-serif;
 				text-align: center;
 				
 				li {
 					display: inline-block;
 					// padding: 2rem;
-					width: 100px;
-					height: 100px;
+					font-family: 'Raleway', sans-serif;
+					width: 65px;
+					height: 65px;
 					border-radius: 50%;
+					// background-color: black;
 				}
 			}
 
 
 			h3 {
 				font-size: 4rem;
+				font-family: 'Raleway', sans-serif;
 			}
 			h4 {
+				font-family: 'Raleway', sans-serif;
 				font-size: 2.2rem;
 				font-weight: 300;
 				padding-bottom: 3rem;
 				// border: 1px solid red;
 			}
 			p {
+				font-family: 'Raleway', sans-serif;
 				padding-top: 2rem;
 			}
 
@@ -1505,6 +1552,7 @@ img {
 		.widget-title {
 			color: $gray-lighter;
 			padding-bottom: 2rem;
+			font-family: 'Raleway', sans-serif;
 			padding-top: 5rem;
 		}
 		ul {
@@ -1519,7 +1567,7 @@ img {
 			@include transition(all 0.5s ease-in-out);
 
 			&:hover {
-				background-color: red;
+				background-color: darken( gold, 20% );
 
 			}
 		}
@@ -1546,7 +1594,11 @@ img {
 			a {
 				font-family: 'Josefin Sans', sans-serif;
 				font-size: 1.5rem;
-				font-weight: 600;	
+				font-weight: 600;
+
+				&:hover {
+					color: white;
+				}	
 			}
 		}
 	}

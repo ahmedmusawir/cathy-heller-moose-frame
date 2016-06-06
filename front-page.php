@@ -69,22 +69,48 @@ get_header(); ?>
 	
 	<div class="content-wrapper">
 		
-			<div class="container clearfix">
+			<div class="container-fluid clearfix">
 		
 
 		
-				<div class="col-md-12">
+				<div class=" col-lg-2 col-md-2 col-sm-2 hidden-xs">
 					
 					<figure>
 						
-						<img class="hidden-xs hidden-sm" src="/wp-content/uploads/2016/06/block-2-bg-large.jpg" alt="">
-						<img class="hidden-xs hidden-md hidden-lg" src="/wp-content/uploads/2016/06/block-2-bg-medium.jpg" alt="">
-						<img class="hidden-sm hidden-md hidden-lg" src="/wp-content/uploads/2016/06/block-2-bg-small.jpg" alt="">
+						<img src="/wp-content/uploads/2016/06/block-2-left-bracket.jpg" alt="">
 						
 					</figure>
 
 				</div>	
-				
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+					
+					<article class="text-content">
+						
+						<h2>
+							This site showcases my music and is also the go to resource for artists serious about getting their music
+						placed in TV, Film and Ads.
+						</h2>
+						<h2>
+							When the opportunity comes, it's too late. You have to decide ahead of time what you need to have ready.
+						</h2>
+						<h2>
+							Through this site you will find resources, inspiration and courses to take you step by step to building a 
+							lasting and financially successful music career.
+						</h2>
+
+
+					</article>
+
+				</div>	
+				<div class=" col-lg-2 col-md-2 col-sm-2 hidden-xs">
+					
+					<figure>
+						
+						<img src="/wp-content/uploads/2016/06/block-2-right-bracket.jpg" alt="">
+
+					</figure>
+
+				</div>									
 	
 
 			</div> 
@@ -119,7 +145,7 @@ get_header(); ?>
 				
 				<article class="right-text">
 								
-					<h3>To create a legacy and build the badass business of your dreams</h3>
+					<h3>To build the music career of your dreams</h3>
 
 					<h3>To ditch your 9-5 struggle and design a fabulous life on your terms</h3>
 
@@ -152,7 +178,8 @@ get_header(); ?>
 
 	    <div class="text-content">
 
-	      <h2>IT ALL STARTS WITH</h2><h1>You</h1>
+	      <h2>IT ALL STARTS WITH</h2>
+	      <h1>You</h1>
 	      <!-- <h1>Choose your option below:</h1> -->
 		  <div class="para-block">
 		      <h4>When you invest in your future through our work,</h4>
@@ -167,47 +194,6 @@ get_header(); ?>
 
 
 	    </div>
-<!-- 
-	    <div class="container-fluid">
-	    	
-	    	<div class="col-md-3 col-sm-3 col-xs-12">
-
-	    		<figure>
-	    			
-	    			<img src="/wp-content/uploads/2016/06/img-1.jpg" alt="">
-	    			
-	    		</figure>
-
-	    	</div>
-	    	<div class="col-md-3 col-sm-3 col-xs-12">
-
-	    		<figure>
-	    			
-	    			<img src="/wp-content/uploads/2016/06/img-2.jpg" alt="">
-	    			
-	    		</figure>
-
-	    	</div>
-	    	<div class="col-md-3 col-sm-3 col-xs-12">
-
-	    		<figure>
-	    			
-	    			<img src="/wp-content/uploads/2016/06/img-3.jpg" alt="">
-	    			
-	    		</figure>
-
-	    	</div>
-	    	<div class="col-md-3 col-sm-3 col-xs-12">
-
-	    		<figure>
-	    			
-	    			<img src="/wp-content/uploads/2016/06/img-4.jpg" alt="">
-	    			
-	    		</figure>
-
-	    	</div>	    		    		    	
-
-	    </div> -->
 
 	</div>
 
