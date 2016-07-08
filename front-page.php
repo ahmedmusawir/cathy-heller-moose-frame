@@ -18,24 +18,22 @@ get_header(); ?>
 	
 	<div class="content-wrapper">
 		
-			<div class="container">
+		<div class="container">
 		
-
-	
-			<div class="col-md-6 col-sm-4 col-xs-12">
+			<div class="col-lg-3 col-md-3 col-sm-2 col-xs-12">
 				<article class="left-text">
 				
 				</article>
 			</div>
 
-			<div class="col-md-6 col-sm-8 col-xs-12">
+			<div class="col-lg-9 col-md-9 col-sm-10 col-xs-12">
 
 				<div class="block-1-content">
 					
 					<div class="block-1-header-container">
 						
 						<h1 class="block-1-header">
-							Hi, I am Cathy. 
+							My Music on TV
 						</h1>
 
 					</div>
@@ -43,22 +41,19 @@ get_header(); ?>
 					
 					<article class="right-text">
 									
-						<h3>
-							A singer, songwriter, and music business entrepreneur. I’ve secured hundreds of licenses for my songs and other artists on TV, Film and National Ad campaigns. I am dedicated to helping you become the musician and person you want to be.						
-						</h3>
-
-						<div class="btn-container">
-							<a class="btn btn-primary btn-lg btn-block" href="#">LEARN MORE</a>
-						</div>						
+						<iframe width="854" height="480" src="https://www.youtube.com/embed/wXSevcoKiAU" frameborder="0" allowfullscreen></iframe>
 					
+						<div class="btn-container text-center">
+							<a class="btn btn-primary btn-lg" href="#">WATCH MORE</a>
+						</div>		
+
 					</article>
 
 				</div>
 
 			</div>	
 
-
-	</div> 
+		</div> 
 	<!-- CONTAINER -->
 
 	</div>
@@ -119,7 +114,7 @@ get_header(); ?>
 
 </section>
 
-<section class="block-3">
+<!-- <section class="block-3">
 	
 	<div class="content-wrapper">
 		
@@ -137,7 +132,6 @@ get_header(); ?>
 			<div class="col-md-4">
 				<article class="left-image">
 					<img class="img-responsive img-circle" src="/wp-content/uploads/2016/06/block-3-left-img-1.jpg" alt="">
-					<!-- <img class="img-responsive img-circle" src="/wp-content/uploads/2016/06/block-3-left-img-650.jpg" alt=""> -->
 				</article>
 			</div>
 
@@ -166,7 +160,6 @@ get_header(); ?>
 
 
 	</div> 
-	<!-- CONTAINER -->
 
 	</div>
 
@@ -180,7 +173,6 @@ get_header(); ?>
 
 	      <h2>IT ALL STARTS WITH</h2>
 	      <h1>You</h1>
-	      <!-- <h1>Choose your option below:</h1> -->
 		  <div class="para-block">
 		      <h4>When you invest in your future through our work,</h4>
 		      <h4>you're also creating meaningful change in the world. </h4>
@@ -195,9 +187,9 @@ get_header(); ?>
 
 	    </div>
 
-	</div>
+	</div> 
 
-</section>
+</section> -->
 
  
 	

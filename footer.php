@@ -82,7 +82,7 @@
 
 	</section> <!-- FOOTER BODY ENDS -->
 	<div id="copyright" class="copyright">
-		<p class="text-center">All Rights Reserved Moose Frame &copy; <?php echo date('Y'); ?>. SEO and Development by <a href="www.htmlfivedev.com">HTMLfiveDev.com</a></p>
+		<p class="text-center">All Rights Reserved Cathy Heller &copy; <?php echo date('Y'); ?>. </p>
 	</div>
 
 </footer>

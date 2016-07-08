@@ -28,11 +28,10 @@
 		<div class="header-logo-social container-fluid">
 			<?php
 			    $front_header_image = get_field('front_header_image', 6); // 1476 is post id     
-			    $blog_header_image = get_field('blog_header_image', 324);                          
+			    $blog_header_image = get_field('blog_header_image', 2924);                          
 			    $siteLogo = get_field('site_logo', 6); // 1476 is post id                               
 			    $size = 'full'; // (thumbnail, medium, large, full or custom size)
 			?>
-
 			<style type="text/css" media="screen">
 				
 				.header-logo-social {
@@ -109,14 +108,51 @@
 	
 	<header id="front-pg-header">
 
-		<?php // if ( is_front_page() || is_home() || is_single() || is_archive() || is_search() ) : ?>
-		<?php if ( is_front_page() ) : ?>
+		<?php  if ( is_front_page() || is_home() || is_single() || is_archive() || is_search() ) : ?>
+		
+			<!-- <img class="img-responsive" src="<?php echo $blog_header_image; ?>" alt="tiana img"> -->
 
-			<img class="img-responsive" src="<?php echo $front_header_image; ?>" alt="tiana img">
+			<section class="container-fluid">
+				
 
-		<?php elseif ( is_home() || is_single() || is_archive() || is_search() ) : ?>	
-			
-			<img class="img-responsive" src="<?php echo $blog_header_image; ?>" alt="tiana img">
+				<div class="col-sm-6 col-md-6 col-lg-6">
+					
+					<h1 class="left-block-header">
+						Hi ,  
+					</h1>
+					<article class="left-text">
+									
+						<h2>I'M CATHY ...</h2>
+						<h3>
+							A singer, songwriter, and music business entrepreneur. I’ve secured hundreds of 
+							licenses for my songs and other artists on TV, Film and National Ad campaigns. 
+							I am dedicated to creating amazing music & also helping others become the musician 
+							and person they want to be.						
+						</h3>
+
+						<div class="btn-container">
+							<a class="btn btn-primary btn-lg btn-block" href="#">LEARN MORE</a>
+						</div>						
+					
+					</article>	
+
+					</div>
+
+				<div class="col-sm-6 col-md-6 col-lg-6">
+					
+					<article class="right-content">
+					
+						<figure>
+							
+							<img class="img-responsive center-block" src="/wp-content/uploads/2016/06/cathy-fp-hdr-right-img.jpg" alt="">
+							
+						</figure>
+
+					</article>
+					
+				</div>
+
+			</section>
 			
 		<?php else : ?>
 			<img class="img-responsive" src="<?php echo $page_header_image; ?>" alt="tiana img">
