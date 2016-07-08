@@ -72,7 +72,7 @@ get_header(); ?>
 					
 					<figure>
 						
-						<img src="/wp-content/uploads/2016/06/block-2-left-bracket.jpg" alt="">
+						<img src="/wp-content/uploads/2016/07/block-2-left-bracket-no-balls.jpg" alt="">
 						
 					</figure>
 
@@ -101,7 +101,7 @@ get_header(); ?>
 					
 					<figure>
 						
-						<img src="/wp-content/uploads/2016/06/block-2-right-bracket.jpg" alt="">
+						<img src="/wp-content/uploads/2016/07/block-2-right-bracket-no-balls.jpg" alt="">
 
 					</figure>
 

@@ -5929,7 +5929,15 @@ button.close {
   font-weight: normal;
   font-style: normal; }
 body {
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  color: black; }
+  body a {
+    color: #9d9d9d; }
+    body a:hover {
+      text-decoration: none;
+      color: white; }
+      body a:hover img {
+        opacity: .6; }
 
 #front-pg-header {
   text-align: center;
@@ -5996,7 +6004,7 @@ body {
         padding-left: 20rem;
         padding-right: 20rem; } }
   #front-pg-header .right-content img {
-    border: 1.3rem solid #E9CBC2; }
+    border: 1.3rem solid black; }
   @media (min-width: 768px) {
     #front-pg-header .right-content img {
       margin-top: 40%; } }
@@ -6054,7 +6062,7 @@ body {
     transition: all 0.3s ease-in-out;
     color: black; }
     .navbar .nav li a:hover {
-      color: #d59b8a; }
+      color: black; }
   .navbar .dropdown-menu {
     background-color: #101010; }
     .navbar .dropdown-menu .current-menu-item a {
@@ -6082,7 +6090,8 @@ body {
     .navbar #menu-menu-1 li a:hover {
       color: gray; }
   .navbar #menu-menu-1 .current-menu-item a {
-    color: #d59b8a; }
+    color: black;
+    border-bottom: 1rem solid #eeeeee; }
 
 img {
   max-width: 100%;
@@ -6159,10 +6168,9 @@ img {
   -o-background-size: cover;
   background-size: cover; }
   .block-1 .content-wrapper .block-1-content {
-    background-color: white;
     margin-top: 15rem;
     margin-bottom: 15rem;
-    background-color: rgba(233, 203, 194, 0.9); }
+    background-color: rgba(255, 255, 255, 0.9); }
   .block-1 .content-wrapper .block-1-header {
     font-family: 'Clicker Script', cursive;
     font-size: 5rem;
@@ -6340,7 +6348,8 @@ img {
  *
  */
 #content {
-  display: none; }
+  display: none;
+  color: black; }
 
 .site-main {
   padding: 0;
@@ -6410,22 +6419,21 @@ img {
   /* Instead use this non-standard one: */
   /* Adds a hyphen where the word breaks, if supported (No Blink) */ }
   .blog-post .entry-header {
-    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), rgba(233, 203, 194, 0.9)) left repeat;
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(233, 203, 194, 0.9)) left repeat;
+    background: url("/wp-content/uploads/2016/07/tv-film-bg-1.jpg") repeat fixed;
     padding-bottom: 2rem; }
     .blog-post .entry-header h1, .blog-post .entry-header h2 {
       font-family: 'Raleway', sans-serif;
       font-size: 3.2rem;
       font-weight: 200;
-      padding-top: 0rem;
+      padding-top: 3rem;
       padding-bottom: 1rem;
       padding-left: 2rem;
       padding-right: 1rem; }
       .blog-post .entry-header h1 a, .blog-post .entry-header h2 a {
-        color: #666666;
+        color: #d5d5d5;
         text-decoration: none; }
         .blog-post .entry-header h1 a:hover, .blog-post .entry-header h2 a:hover {
-          color: gray; }
+          color: white; }
     .blog-post .entry-header .entry-meta {
       padding-bottom: 1rem;
       padding-left: 2rem;
@@ -6470,7 +6478,7 @@ img {
       padding-top: 3rem;
       font-size: 2rem;
       font-variant: 300;
-      color: #b0b0b0; }
+      color: black; }
   .blog-post .entry-footer {
     padding-bottom: 2rem;
     padding-top: 2rem; }
@@ -6539,7 +6547,7 @@ img {
 .single-page .entry-content {
   padding-left: 3rem;
   padding-right: 3rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 300; }
   .single-page .entry-content .featured-img {
     width: 100%;
@@ -6551,9 +6559,12 @@ img {
   padding-top: 2rem; }
   .single-page .only-text p {
     font-family: 'Raleway', sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem !important;
     font-variant: 300;
-    color: #b0b0b0; }
+    color: black; }
+    .single-page .only-text p .uppercase-c {
+      font-size: 6rem;
+      line-height: 2rem; }
 .single-page .entry-footer {
   padding-bottom: 2rem;
   padding-top: 2rem; }
@@ -6573,11 +6584,11 @@ img {
 #tv-film-page-content li a:hover {
   text-decoration: none; }
 #tv-film-page-content li a .video {
-  border: 1rem solid #E9CBC2; }
+  border: 1rem solid black; }
 #tv-film-page-content li a .details {
   text-align: center;
-  background-color: #E9CBC2;
-  background: url("/wp-content/uploads/2016/07/tv-film-bg.jpg");
+  background-color: black;
+  background: url("/wp-content/uploads/2016/07/tv-film-bg-1.jpg") repeat fixed;
   padding: 3rem;
   padding-top: 1rem; }
   #tv-film-page-content li a .details h2 {
@@ -6589,14 +6600,14 @@ img {
     font-size: 1.5rem;
     font-weight: 700; }
   #tv-film-page-content li a .details:hover h2 {
-    color: black; }
+    color: #9d9d9d; }
   #tv-film-page-content li a .details:hover p {
-    color: black; }
+    color: #9d9d9d; }
   @media (max-width: 800px) {
     #tv-film-page-content li a .details h2 {
-      color: black; }
+      color: white; }
     #tv-film-page-content li a .details p {
-      color: black; } }
+      color: white; } }
 
 /**
  *
@@ -6761,6 +6772,11 @@ img {
 .sidebar {
   padding-right: 0;
   margin-top: 4rem;
+  /**
+  	 *
+  	 * 4 Image Anchor Block Widget
+  	 *
+  	 */
   /* These are technically the same, but use both */
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -6774,6 +6790,39 @@ img {
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto; }
+  .sidebar #four-img-sidebar-widget {
+    background-color: white;
+    text-align: center; }
+    .sidebar #four-img-sidebar-widget img {
+      margin-top: -5rem;
+      width: 50%; }
+    .sidebar #four-img-sidebar-widget h5 {
+      color: #a6a6a6;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      font-weight: 700;
+      font-size: 2.5rem; }
+    .sidebar #four-img-sidebar-widget .left-block {
+      border-right: 1rem solid black; }
+    .sidebar #four-img-sidebar-widget figure i {
+      -webkit-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out;
+      transition: all 1s ease-in-out;
+      color: #999999;
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
+      .sidebar #four-img-sidebar-widget figure i:hover {
+        -webkit-transform: scale(0.9) rotate(-3deg);
+        -moz-transform: scale(0.9) rotate(-3deg);
+        -ms-transform: scale(0.9) rotate(-3deg);
+        -o-transform: scale(0.9) rotate(-3deg);
+        transform: scale(0.9) rotate(-3deg);
+        -webkit-transform-origin: center top;
+        -moz-transform-origin: center top;
+        -ms-transform-origin: center top;
+        -o-transform-origin: center top;
+        transform-origin: center top;
+        color: black; }
   .sidebar .widget_recent_comments ul li:before {
     color: #dddddd; }
   .sidebar .widget_archive ul li:before {
@@ -6803,8 +6852,7 @@ img {
   padding-left: 2rem;
   padding-right: 2rem;
   font-family: 'Raleway', sans-serif;
-  background: -webkit-linear-gradient(rgba(233, 203, 194, 0.8), rgba(238, 238, 238, 0.5)) left repeat;
-  background: linear-gradient(rgba(233, 203, 194, 0.8), rgba(238, 238, 238, 0.5)) left repeat; }
+  background: url("/wp-content/uploads/2016/07/tv-film-bg-1.jpg") repeat fixed; }
   .widget img {
     width: 100%; }
   .widget .widget-title {
@@ -6815,48 +6863,6 @@ img {
     padding-bottom: 2rem; }
   .widget .srp-post-content {
     color: #7d7d7d; }
-  .widget .custom-widget h3 {
-    color: #242424;
-    text-align: center;
-    font-family: 'Raleway', sans-serif; }
-  .widget .custom-widget h4 {
-    color: #575757;
-    text-align: center;
-    font-family: 'Raleway', sans-serif; }
-  .widget .custom-widget img {
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out; }
-    .widget .custom-widget img:hover {
-      -webkit-transform: translateY(0px);
-      -moz-transform: translateY(0px);
-      -ms-transform: translateY(0px);
-      -o-transform: translateY(0px);
-      transform: translateY(0px);
-      -webkit-transform: scale(0.9) rotate(0deg);
-      -moz-transform: scale(0.9) rotate(0deg);
-      -ms-transform: scale(0.9) rotate(0deg);
-      -o-transform: scale(0.9) rotate(0deg);
-      transform: scale(0.9) rotate(0deg);
-      -webkit-transform-origin: center top;
-      -moz-transform-origin: center top;
-      -ms-transform-origin: center top;
-      -o-transform-origin: center top;
-      transform-origin: center top;
-      -webkit-transform-style: preserve-3d;
-      -moz-transform-style: preserve-3d;
-      -ms-transform-style: preserve-3d;
-      -o-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-      opacity: .5; }
-  .widget .custom-widget p {
-    color: #cccccc;
-    text-align: center;
-    font-size: 1.6rem;
-    padding-bottom: 2rem;
-    font-family: 'Raleway', sans-serif; }
   .widget ul {
     list-style: none;
     padding-left: 0; }
@@ -6873,7 +6879,7 @@ img {
         background-color: gray; }
       .widget ul li a {
         display: block;
-        color: #0b0b0b;
+        color: #bdbdbd;
         font-size: 2rem;
         font-family: 'Raleway', sans-serif; }
         .widget ul li a:hover {
@@ -6892,7 +6898,7 @@ img {
  *
  */
 #footer-main {
-  background-color: #e9cbc2;
+  background: url("/wp-content/uploads/2016/07/footer-bg-1.jpg") repeat fixed;
   font-family: 'Raleway', sans-serif; }
   #footer-main .copyright {
     padding: 1rem;
@@ -6947,12 +6953,12 @@ img {
       -moz-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out; }
       #footer-main .widget-footer li:hover {
-        background-color: #ce8b77; }
+        background-color: black; }
     #footer-main .widget-footer a {
       color: #cdcdcd;
       font-size: 2rem; }
       #footer-main .widget-footer a:hover {
-        color: black; }
+        color: white; }
   #footer-main #footer-menu {
     text-align: center; }
     #footer-main #footer-menu li {
@@ -6964,17 +6970,7 @@ img {
         font-weight: 600;
         color: black; }
         #footer-main #footer-menu li a:hover {
-          color: white; }
-
-.acf-map {
-  width: 100%;
-  height: 400px;
-  border: #ccc solid 1px;
-  margin: 20px 0; }
-
-/* fixes potential theme css conflict */
-.acf-map img {
-  max-width: inherit !important; }
+          color: gray; }
 
 /*--------------------------------------------------------------
 10.3 Comments

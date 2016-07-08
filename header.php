@@ -144,7 +144,7 @@
 					
 						<figure>
 							
-							<img class="img-responsive center-block" src="/wp-content/uploads/2016/06/cathy-fp-hdr-right-img.jpg" alt="">
+							<img class="img-responsive center-block" src="/wp-content/uploads/2016/07/cathy-fp-hdr-right-img-black-white.jpg" alt="">
 							
 						</figure>
 
